@@ -10,4 +10,27 @@ html, body {
 
 .loading-screen {
     position: absolute;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background: #0f0f0f;
+}
+
+.loading-screen .intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.loading-screen .intro h1 {
+    font-weight: 300;
+    color: #fff;
+}
+
+.intro-title .letter {
+    display: inline-block;
 }
