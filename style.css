@@ -2,7 +2,7 @@ html, body {
     margin: 0%;
     padding: 0%;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     font-family: "Silk Serif" !important;
     background: #121212;
     cursor:url("https://raw.githubusercontent.com/codegridweb/Creative-Agency-Landing-Page-Concept/master/cursor.png"), auto !important;
@@ -33,4 +33,44 @@ html, body {
 
 .intro-title .letter {
     display: inline-block;
+    line-height: 1em;
+}
+
+.hero--left {
+    position: absolute;
+    height: 100vh;
+    background: url("https://raw.githubusercontent.com/codegridweb/Creative-Agency-Landing-Page-Concept/master/hero--left.jpg") no-repeat 100% 50%;
+    background-size: cover;
+    animation: animatedBackground1 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 4.8s;
+}
+
+.hero--middle {
+    background: whiten  ;
+}
+
+.hero--right {
+    position: absolute;
+    background: url("https://raw.githubusercontent.com/codegridweb/Creative-Agency-Landing-Page-Concept/master/hero--right.jpg") no-repeat 50% 50%;
+    background-size: 124%;
+    animation: animatedBackground2 5s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 3.8s;
+}
+
+@keyframes animatedBackground1 {
+    from {
+        background-position: 50% 50%
+    } 
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes animatedBackground2 {
+    from {
+        background-size: 280%;
+    } 
+    to {
+        background-position: 124%;
+    }
 }
